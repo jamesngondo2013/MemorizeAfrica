@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>JAYME</Machine>
+    <WindowsUser>James</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>d808e754-e9b1-4a0b-96bc-9fee1690f545</PackageIdentityName>
+    <IntermediateOutputPath>A:\GMIT HACAKTHON APPS\Memorize Africa\Memorize Africa\Memorize Africa\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="A:\GMIT HACAKTHON APPS\Memorize Africa\Memorize Africa\Memorize Africa\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="A:\GMIT HACAKTHON APPS\Memorize Africa\Memorize Africa\Memorize Africa\bin\Debug\Memorize Africa.exe">
+      <PackagePath>Memorize Africa.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="A:\GMIT HACAKTHON APPS\Memorize Africa\Memorize Africa\Memorize Africa\About.xml">
+      <PackagePath>About.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="A:\GMIT HACAKTHON APPS\Memorize Africa\Memorize Africa\Memorize Africa\Assets\africa950.png">
+      <PackagePath>Assets\africa950.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="A:\GMIT HACAKTHON APPS\Memorize Africa\Memorize Africa\Memorize Africa\Assets\africaBackgroundImage.png">
+      <PackagePath>Assets\africaBackgroundImage.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="A:\GMIT HACAKTHON APPS\Memorize Africa\Memorize Africa\Memorize Africa\Assets\africaBackgroundImage2.png">
+      <PackagePath>Assets\africaBackgroundImage2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="A:\GMIT HACAKTHON APPS\Memorize Africa\Memorize Africa\Memorize Africa\Assets\africaBackgroundImg.png">
+      <PackagePath>Assets\africaBackgroundImg.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="A:\GMIT HACAKTHON APPS\Memorize Africa\Memorize Africa\Memorize Africa\Assets\about.png">
+      <PackagePath>Assets\about.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="A:\GMIT HACAKTHON APPS\Memorize Africa\Memorize Africa\Memorize Africa\Assets\africaBackgroundSafari.png">
+      <PackagePath>Assets\africaBackgroundSafari.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="A:\GMIT HACAKTHON APPS\Memorize Africa\Memorize Africa\Memorize Africa\Assets\africaMap.png">
+      <PackagePath>Assets\africaMap.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="A:\GMIT HACAKTHON APPS\Memorize Africa\Memorize Africa\Memorize Africa\Assets\score.png">
+      <PackagePath>Assets\score.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="A:\GMIT HACAKTHON APPS\Memorize Africa\Memorize Africa\Memorize Africa\Assets\play.png">
+      <PackagePath>Assets\play.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="A:\GMIT HACAKTHON APPS\Memorize Africa\Memorize Africa\Memorize Africa\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="A:\GMIT HACAKTHON APPS\Memorize Africa\Memorize Africa\Memorize Africa\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="A:\GMIT HACAKTHON APPS\Memorize Africa\Memorize Africa\Memorize Africa\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="A:\GMIT HACAKTHON APPS\Memorize Africa\Memorize Africa\Memorize Africa\Assets\Square310x310Logo.scale-100.png">
+      <PackagePath>Assets\Square310x310Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="A:\GMIT HACAKTHON APPS\Memorize Africa\Memorize Africa\Memorize Africa\Assets\Square70x70Logo.scale-100.png">
+      <PackagePath>Assets\Square70x70Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="A:\GMIT HACAKTHON APPS\Memorize Africa\Memorize Africa\Memorize Africa\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="A:\GMIT HACAKTHON APPS\Memorize Africa\Memorize Africa\Memorize Africa\Assets\Wide310x150Logo.scale-100.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="A:\GMIT HACAKTHON APPS\Memorize Africa\Memorize Africa\Memorize Africa\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="A:\GMIT HACAKTHON APPS\Memorize Africa\Memorize Africa\Memorize Africa\bin\Debug\About.xbf">
+      <PackagePath>About.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="A:\GMIT HACAKTHON APPS\Memorize Africa\Memorize Africa\Memorize Africa\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="A:\GMIT HACAKTHON APPS\Memorize Africa\Memorize Africa\Memorize Africa\bin\Debug\Play.xbf">
+      <PackagePath>Play.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="A:\GMIT HACAKTHON APPS\Memorize Africa\Memorize Africa\Memorize Africa\bin\Debug\PlayQuit.xbf">
+      <PackagePath>PlayQuit.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="A:\GMIT HACAKTHON APPS\Memorize Africa\Memorize Africa\Memorize Africa\bin\Debug\Memorize Africa.xr.xml">
+      <PackagePath>Memorize Africa.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="A:\GMIT HACAKTHON APPS\Memorize Africa\Memorize Africa\Memorize Africa\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

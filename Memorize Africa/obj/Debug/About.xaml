@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="Memorize_Africa.About"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Memorize_Africa"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Image Source="Assets/africaBackgroundImg.png" Stretch="Fill" Grid.ColumnSpan="2"/>
+        <ListBox x:Name="displayMsg" FontFamily="Arial" FontWeight="Medium" FontSize="28" VerticalAlignment="Center" Height="681" Margin="0,0,0,87" >
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Margin="12,17,20,28" >
+                        <TextBlock Text="{Binding Message}" TextWrapping="Wrap" Foreground="Black" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+            <ListBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Transparent" Offset="0" />
+                    <GradientStop Color="#F0F8FF" Offset="1" />
+                </LinearGradientBrush>
+            </ListBox.Background>
+
+        </ListBox>
+        <Button x:ConnectionId='1' Name="back" Content="Back" HorizontalAlignment="Left" Margin="546,681,0,0" VerticalAlignment="Top" Height="80" Width="344" FontFamily="Comic Sans MS" FontSize="44" FontWeight="Bold" Foreground="Red"                     />
+    </Grid>
+</Page>
+

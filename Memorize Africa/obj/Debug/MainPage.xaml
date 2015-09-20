@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="Memorize_Africa.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Memorize_Africa"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Image Source="Assets/africaBackgroundSafari.png" Stretch="Fill"/>
+        <Image x:ConnectionId='1' x:Name="about" Source="Assets/about.png" Margin="323,540,790,36"                       />
+        <Image x:ConnectionId='2' x:Name="play" Source="Assets/play.png" Margin="581,594,67,69"                      />
+
+        <Grid x:Name="Snap" Visibility="Collapsed"  >
+            <Image Stretch="Fill" Source="Assets/africaBackgroundSafari.png" />
+        </Grid>
+    </Grid>
+</Page>
+

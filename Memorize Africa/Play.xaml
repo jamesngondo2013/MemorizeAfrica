@@ -1,0 +1,264 @@
+﻿<Page
+    x:Class="Memorize_Africa.Play"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Memorize_Africa"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="255*"/>
+            <ColumnDefinition Width="428*"/>
+        </Grid.ColumnDefinitions>
+
+        <Image Source="Assets/africaBackgroundImg.png" Stretch="Fill" Grid.ColumnSpan="2"/>
+        <Canvas Grid.ColumnSpan="2" Margin="100,10,316,4" x:Name="DistrictPoints">
+            <Image Source="Assets/africaMap.png" Stretch="Fill" Height="754" Width="950"/>
+            <Canvas x:Name="Algeria" Height="153" Canvas.Left="214" Canvas.Top="68" Width="204" Tapped="Path_Tapped" Tag="Algeria" Opacity="0">
+                <Path Data="M388,68 L371,71 L357,68 L330,74 L305,76 L296,81 L297,91 L301,104 L297,110 L285,109 L255,120 L237,130 L217,132 L214,139 L242,159 L290,185 L322,206 L333,218 L345,220 L360,213 L385,201 L402,192 L417,186 L407,182 L401,168 L402,151 L399,131 L394,115 L383,107 L381,90 L386,79 z" Fill="#FFF4F4F5" Height="153" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="204"/>
+            </Canvas>
+            <Canvas x:Name="Morocco" Height="64" Canvas.Left="177" Canvas.Top="73" Width="107" Tapped="Path_Tapped" Tag="Morocco" Opacity="0">
+                <Path Data="M254,73 L249,81 L239,84 L226,92 L212,103 L209,113 L194,124 L177,129 L193,136 L200,127 L206,122 L223,114 L237,113 L249,109 L257,105 L262,96 L272,94 L282,94 L283,83 L267,80 z" Fill="#FFF4F4F5" Height="64" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="107"/>
+            </Canvas>
+            <Canvas x:Name="Tunisia" Height="59" Canvas.Left="397" Canvas.Top="61" Width="34" Tapped="Path_Tapped" Tag="Tunisia" Opacity="0">
+                <Path Data="M413,61 L406,70 L403,81 L397,89 L398,99 L404,105 L408,113 L411,119 L416,110 L424,105 L430,100 L428,94 L422,95 L416,97 L415,89 L416,82 L420,76 L424,74 L422,68 L420,62 z" Fill="#FFF4F4F5" Height="59" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="34"/>
+            </Canvas>
+            <Canvas x:Name="Western_Sahara" Height="59" Canvas.Left="101" Canvas.Top="137" Width="95" Tapped="Path_Tapped" Tag="Western_Sahara" Opacity="0">
+                <Path Data="M154,140 L146,147 L141,152 L136,158 L128,166 L119,175 L108,182 L101,191 L108,192 L120,195 L131,194 L136,193 L135,186 L138,179 L147,175 L151,168 L154,161 L156,150 L165,151 L178,150 L189,150 L195,145 L186,140 L175,137 L159,139 z" Fill="#FFF4F4F5" Height="59" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="95"/>
+            </Canvas>
+            <Canvas x:Name="Mauritania" Height="104" Canvas.Left="101" Canvas.Top="149" Width="118" Tapped="Path_Tapped" Tag="Mauritania" Opacity="0">
+                <Path Data="M203,149 L201,155 L197,158 L184,159 L172,158 L162,157 L161,168 L156,178 L155,183 L149,185 L145,188 L145,193 L143,201 L138,204 L122,202 L110,201 L105,203 L105,214 L103,224 L101,236 L106,237 L117,238 L126,244 L133,250 L137,252 L146,251 L156,250 L167,246 L177,247 L195,246 L207,250 L212,250 L213,229 L213,203 L213,181 L213,167 L218,159 z" Fill="#FFF4F4F5" Height="104" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="118"/>
+            </Canvas>
+            <Canvas x:Name="Mali" Height="131" Canvas.Left="145" Canvas.Top="173" Width="188" Tapped="Path_Tapped" Tag="Mali" Opacity="0">
+                <Path Data="M224,173 L224,191 L224,202 L224,215 L224,233 L224,246 L228,250 L224,262 L214,263 L202,262 L189,263 L178,263 L168,262 L159,262 L148,262 L145,266 L145,274 L149,279 L150,286 L159,286 L165,284 L172,281 L177,286 L181,295 L184,301 L190,303 L198,301 L206,298 L211,298 L215,289 L224,282 L227,272 L235,272 L241,273 L254,268 L268,264 L287,261 L300,262 L313,259 L326,253 L331,244 L332,237 L328,233 L321,224 L311,221 L293,206 L274,196 L258,185 L247,181 L238,173 z" Fill="#FFF4F4F5" Height="131" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="188"/>
+            </Canvas>
+            <Canvas x:Name="Senegal" Height="44" Canvas.Left="84" Canvas.Top="243" Width="61" Tapped="Path_Tapped" Tag="Senegal" Opacity="0">
+                <Path Data="M92,243 L99,244 L111,243 L118,248 L126,255 L131,262 L136,268 L138,274 L144,279 L143,286 L137,285 L126,285 L120,282 L118,274 L118,266 L114,260 L107,259 L98,256 L90,256 L84,256 z" Fill="#FFF4F4F5" Height="44" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="61"/>
+            </Canvas>
+            <Canvas x:Name="Gambia" Height="15" Canvas.Left="81" Canvas.Top="263" Width="33" Tapped="Path_Tapped" Tag="Gambia" Opacity="0">
+                <Path Data="M81,265 L88,264 L95,263 L102,266 L111,266 L113,274 L106,276 L100,277 L94,277 L87,277 L82,276 z" Fill="#FFF4F4F5" Height="15" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="33"/>
+            </Canvas>
+            <Canvas x:Name="Guinea_Bissau" Height="19" Canvas.Left="84" Canvas.Top="280" Width="34" Tapped="Path_Tapped" Tag="Guinea_Bissau" Opacity="0">
+                <Path Data="M84,284 L90,282 L97,280 L107,281 L114,283 L117,287 L117,291 L111,293 L107,295 L99,298 L94,293 C94,293 90,289 87,288 C84,287 84,284 84,284 z" Fill="#FFF4F4F5" Height="19" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="34"/>
+            </Canvas>
+            <Canvas x:Name="Guinea" Height="41" Canvas.Left="106" Canvas.Top="291" Width="76" Tapped="Path_Tapped" Tag="Guinea" Opacity="0">
+                <Path Data="M106,301 L113,299 L121,294 L128,291 L134,291 L140,292 L151,292 L160,292 L168,292 L172,294 L176,301 L177,306 L177,314 L181,323 L177,329 L173,331 L167,331 L164,324 L159,322 L153,318 L153,312 L152,308 L147,303 L137,303 L128,305 L122,308 L116,312 z" Fill="#FFF4F4F5" Height="41" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="76"/>
+            </Canvas>
+            <Canvas x:Name="Sierra_Leone" Height="29" Canvas.Left="119" Canvas.Top="311" Width="34" Tapped="Path_Tapped" Tag="Sierra_Leone" Opacity="0">
+                <Path Data="M138,311 L130,312 L122,317 L119,323 L122,329 L126,335 L131,336 L135,338 L143,339 L147,333 L152,330 L152,323 L148,315 z" Fill="#FFF4F4F5" Height="29" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="34"/>
+            </Canvas>
+            <Canvas x:Name="Liberia" Height="36" Canvas.Left="145" Canvas.Top="330" Width="41" Tapped="Path_Tapped" Tag="Liberia" Opacity="0">
+                <Path Data="M145,343 L152,339 L156,336 L159,330 L163,331 L164,339 L171,339 L176,340 L176,345 L177,349 L183,351 L185,358 L185,364 L178,365 L169,360 L163,356 L158,352 L153,347 z" Fill="#FFF4F4F5" Height="36" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="41"/>
+            </Canvas>
+            <Canvas x:Name="Ivory_Coast" Height="49" Canvas.Left="182" Canvas.Top="312" Width="65" Tapped="Path_Tapped" Tag="Ivory_Coast" Opacity="0">
+                <Path Data="M190,314 L188,319 L190,324 L190,330 L188,335 L182,337 L183,341 L188,346 L191,350 L192,355 L191.154,359.231 L191,360 L205,359 L215,359 L224,359 L232,359 L242,359 L236,347 L239,340 L242,334 L246,326 L244,321 L237,319 L230,320 L224,320 L219,317 L215,315 L204,312 L198,312 z" Fill="#FFF4F4F5" Height="49" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="65"/>
+            </Canvas>
+            <Canvas x:Name="Bukina_Faso" Height="45" Canvas.Left="220" Canvas.Top="270" Width="87" Tapped="Path_Tapped" Tag="Bukina_Faso" Opacity="0">
+                <Path Data="M282,270 L274,270 L263,274 L255,277 L249,282 L241,286 L236,288 L232,290 L227,295 L222,298 L220,305 L225,313 L232,312 L238,313 L244,314 L243,307 L244,302 L251,301 L259,302 L271,302 L283,300 L291,301 L299,297 L306,295 L298,291 L295,287 L291,281 z" Fill="#FFF4F4F5" Height="45" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="87"/>
+
+
+            </Canvas>
+            <Canvas x:Name="Ghana" Height="54" Canvas.Left="245" Canvas.Top="308" Width="36" Tapped="Path_Tapped" Tag="Ghana" Opacity="0">
+                <Path Data="M269,309 L260,310 L253,308 L249,308 L250,316 L251,327 L253,333 L251,338 L245,345 L245,349 L247,354 L251,361 L260,360 L267,358 L274,356 L280,354 L280,345 L278,334 L275,325 L274,317 z" Fill="#FFF4F4F5" Height="54" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="36"/>
+
+
+            </Canvas>
+            <Canvas x:Name="Togo" Height="47" Canvas.Left="277" Canvas.Top="307" Width="23" Tapped="Path_Tapped" Tag="Togo" Opacity="0">
+                <Path Data="M290,307 L283,307 L277,309 L279,320 L281,329 L283,336 L286,341 L286,348 L287,352 L293,353 L298,350 L299,342 L299,331 L298,322 L294,315 z" Fill="#FFF4F4F5" Height="47" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="23"/>
+
+
+            </Canvas>
+            <Canvas x:Name="Benin" Height="54" Canvas.Left="296" Canvas.Top="296" Width="33" Tapped="Path_Tapped" Tag="Benin" Opacity="0">
+                <Path Data="M299,306 L296,312 L302,320 L303,328 L303,334 L304,344 L303,349 L310,349 L316,348 L318,340 L316,334 L316,329 L320,321 L325,316 L328,307 L326,300 L322,296 L315,296 L311,303 L306,305 z" Fill="#FFF4F4F5" Height="54" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="33"/>
+
+
+            </Canvas>
+            <Canvas x:Name="Niger" Height="95" Canvas.Left="296" Canvas.Top="195" Width="178" Tapped="Path_Tapped" Tag="Niger" Opacity="0">
+                <Path Data="M433,198 L419,203 L405,205 L392,212 L385,220 L375,225 L361,230 L351,230 L346,240 L345,249 L342,259 L335,267 L323,271 L311,271 L303,271 L296,271 L301,276 L306,286 L313,289 L322,288 L328,288 L331,282 L338,277 L346,276 L354,278 L364,278 L370,281 L379,284 L387,280 L392,283 L404,287 L413,283 L421,283 L431,282 L438,279 L443,279 C443,279 445,280 448,273 C451,266 451,265 451,265 L459,255 C459,255 467,260 470,248 C473,236 473,236 473,236 L473,229 L473,217 L470,209 L467,203 L459,203 L448,200 L442,195 z" Fill="#FFF4F4F5" Height="95" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="178"/>
+
+
+            </Canvas>
+            <Canvas x:Name="Nigeria" Height="84" Canvas.Left="327" Canvas.Top="283" Width="126" Tapped="Path_Tapped" Tag="Nigeria" Opacity="0">
+                <Path Data="M354,283 L341,285 L338,290 L335,300 L337,307 L337,315 L335,322 L329,327 L331,334 L329,340 L327,345 L336,347 L342,351 L348,356 L354,361 L360,366 L367,366 L373,363 L382,363 L387,357 L390,352 L397,344 L403,343 L412,341 L422,344 L429,331 L436,317 L445,312 L450,307 L452,303 L452,296 L449,291 L441,291 L431,292 L422,292 L411,294 L400,300 L389,295 L380,294 L371,294 L361,287 z" Fill="#FFF4F4F5" Height="84" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="126"/>
+
+
+            </Canvas>
+            <Canvas x:Name="Cameroon" Height="70" Canvas.Left="397" Canvas.Top="322" Width="81" Tapped="Path_Tapped" Tag="Cameroon" Opacity="0">
+                <Path Data="M454,322 L449,331 L445,338 L437,343 L435,349 L429,355 L422,356 L417,356 L410,353 L402,359 L397,367 L407,374 L411,382 L412,389 L426,388 L438,387 L453,386 L462,388 L472,389 L477,391 L469,384 L465,379 L462,370 L461,360 L460,351 L466,345 L471,343 L471,338 L467,331 L462,330 z" Fill="#FFF4F4F5" Height="70" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="81"/>
+
+
+            </Canvas>
+            <Canvas x:Name="Libya" Height="110" Canvas.Left="419" Canvas.Top="106" Width="166" Tapped="Path_Tapped" Tag="Libya" Opacity="0">
+                <Path Data="M438,106 L433,112 L423,120 L419,131 L419,143 L419,160 L422,166 L430,171 L437,176 L446,181 C446,181 449,183 457,185 C465,187 465,187 465,187 L477,180 L486,181 L521,192 L542,205 L562,209 L570,215 C570,215 570,213 577,213 C584,213 584,213 584,213 L583,199 L582,161 L580,141 L579,130 L578,117 L574,114 C574,114 571,115 565,112 C559,109 559,109 559,109 L546,108 L541,111 L548,127 L535,126 L524,127 L516,131 L504,127 L498,122 L486,123 L475,116 L468,111 L459,110 L451,107 z" Fill="#FFF4F4F5" Height="110" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="166"/>
+
+
+            </Canvas>
+            <Canvas x:Name="Egypt" Height="85" Canvas.Left="588" Canvas.Top="115" Width="116" Tapped="Path_Tapped" Tag="Egypt" Opacity="0">
+                <Path Data="M591,115 L588,129 L591,141 L593,162 L593,177 L592,190 L592,199 L621,198 L647,196 L664,196 L677,196 L693,193 L703,187 L702,179 L690,167 L677,153 L668,138 L662,119 L652,115 L646,117 L637,120 L625,123 L613,120 L602,115 z" Fill="#FFF4F4F5" Height="85" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="116"/>
+
+
+            </Canvas>
+            <Canvas x:Name="Sudan" Height="166" Canvas.Left="569" Canvas.Top="202" Width="167" Tapped="Path_Tapped" Tag="Sudan" Opacity="0">
+                <Path Data="M598,205 L598,213 L598,221 L595,226 L587,229 L586,245 L586,259 L583,269 L574,272 L573,285 C573,285 566,279 571,294 C576,309 576,309 576,309 L582,311 L588,317 L597,327 L608,336 L621,344 L632,355 L639,359 L654,364 C654,364 654,365 662,366 C670,367 662,367 671,367 C680,367 680,367 680,367 L694,366 C694,366 694,369 703,367 C712,365 712,365 712,365 L718,358 L709,351 L703,344 L694,334 L700,323 L707,310 L708,299 L717,286 L723,276 L729,265 L735,247 L736,237 L734,222 L729,215 L723,203 L717,202 L707,207 L695,205 L686,205 L673,205 L652,208 L630,207 L611,206 z" Fill="#FFF4F4F5" Height="166.688" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="167.801"/>
+
+
+            </Canvas>
+            <Canvas x:Name="Chad" Height="138" Canvas.Left="461" Canvas.Top="196" Width="115" Tapped="Path_Tapped" Tag="Chad" Opacity="0">
+                <Path Data="M488,196 L479,196 L479,202 L488,210 L488,218 L488,230 L486,244 L483,257 L474,265 L461,274 L466,276 L466,284 L477,293 L478,303 L482,316 L482,323 L471,324 L478,333 L487,332 L496,331 L505,330 L511,327 L515,321 L526,319 L533,318 L541,314 L550,311 L556,307 L559,302 L555,297 L550,289 L553,277 L556,270 L562,263 L566,257 L571,256 L575,256 L575,247 L575,240 L575,228 L557,221 L531,211 L511,205 z" Fill="#FFF4F4F5" Height="138" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="115"/>
+
+
+            </Canvas>
+            <Canvas x:Name="Central_African_Republic" Height="69" Canvas.Left="471" Canvas.Top="312" Width="144" Tapped="Path_Tapped" Tag="Central_African_Republic" Opacity="0">
+                <Path Data="M560,316 L553,323 L542,328 L531,333 L526,336 L519,341 L507,343 L493,347 L482,348 L477,354 L471,360 L472,370 L483,372 L483,380 L489,374 L499,373 L509,373 L514,373 L517,363 L527,359 L536,359 L542,366 L556,365 L566,364 L573,361 L588,358 C588,358 592,355 603,356 C614,357 614,357 614,357 L598,341 L588,339 L576,336 L572,327 L570,319 L562,312" Fill="#FFF4F4F5" Height="69" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="144"/>
+
+
+            </Canvas>
+            <Canvas x:Name="Gabon" Height="53" Canvas.Left="405" Canvas.Top="393" Width="57" Tapped="Path_Tapped" Tag="Gabon" Opacity="0">
+                <Path Data="M430,393 L432,398 L434,404 L434,410 L433,416 L429,419 L422,422 L414,423 L409,423 L405,423 L408,431 L411,436 L412,441 L418,445 L425,444 L427,438 L425,433 L431,431 L435,430 L440,428 L445,430 L452,429 L458,430 L461,419 L457,415 L453,410 L456,404 L450,402 L446,401 L445,396 L441,393 z" Fill="#FFF4F4F5" Height="53" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="57"/>
+
+
+            </Canvas>
+            <Canvas x:Name="Equatorial_Guinea" Height="26" Canvas.Left="400" Canvas.Top="390" Width="27" Tapped="Path_Tapped" Tag="Equatorial_Guinea" Opacity="0">
+                <Path Data="M407,394 L403,397 L400,405 L401,410 L403,414 L410,414 L415,415 L423,412 L426,404 L426,395 L426,390 L416,392 z" Fill="#FFF4F4F5" Height="26" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="27"/>
+
+
+            </Canvas>
+            <Canvas x:Name="Congo_Brazzaville" Height="81" Canvas.Left="424" Canvas.Top="380" Width="90" Tapped="Path_Tapped" Tag="Congo_Brazzaville" Opacity="0">
+                <Path Data="M499,381 L491,380 L491,388 L487,396 L482,398 L472,398 L466,398 L460,398 L463,407 L463,415 L467,421 L467,429 L463,433 L455,438 L448,436 C448,436 443,436 443,436 L435,440 L433,448 L428,449 L424,449 L430,456 L433,460 L442,453 L449,456 L456,452 L462,452 L463,456 L471,455 L477,449 L484,445 L484,434 L487,428 L495,422 L503,416 L505,407 L506,399 L508,393 L508,388 L513,383 z" Fill="#FFF4F4F5" Height="81" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="90"/>
+
+
+            </Canvas>
+            <Canvas x:Name="DR_Congo" Height="163" Canvas.Left="443" Canvas.Top="369" Width="223" Tapped="Path_Tapped" Tag="DR_Congo" Opacity="0">
+                <Path Data="M530,372 L521,375 L520,385 L518,395 L516,408 L511,421 L504,428 L495,438 L491,447 L488,457 L480,460 L470,463 L458.477,465.034 L453,466 L443,466 L471,468 L484,465 L493,468 L499,475 L504,485 L512,486 L520,483 L527,471 L538,470 L547,477 L557,480 L563,485 L563,499 L564,510 L571,516 L579,513 L588,512 L597,513 L605,518 L615,522 L625,518 L634,523 L642,531 L635,516 L637,506 L636,495 L646,486 L654,487 L653,480 L649,465 L646,459 L646,450 L644,443 L645,430 L648,418 L652,413 L652,406 L659,399 L665,393 L665,381 L657,375 L650,376 L640,376 L628,371 L611,369 L601,371 L592,371 L581,371 L573,378 L565,379 L550,377 L538,376 z" Fill="#FFF4F4F5" Height="163" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="223"/>
+
+
+            </Canvas>
+            <Canvas x:Name="Eritrea" Height="50" Canvas.Left="737" Canvas.Top="235" Width="77" Tapped="Path_Tapped" Tag="Eritrea" Opacity="0">
+                <Path Data="M757,235 L751,240 L745,243 L740,246 L740,253 L737,261 L737,266 L737,270 L744,272 L749,270 L754,266 L760,266 L767,267 L774,269 L784,270 L791,272 L798,275 L805,281 L809,284 L813,280 L804,274 L793,267 L783,264 L777,258 L769,252 L762,245 z" Fill="#FFF4F4F5" Height="50" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="77"/>
+
+
+            </Canvas>
+            <Canvas x:Name="Djibouti" Height="25" Canvas.Left="796" Canvas.Top="287" Width="40" Tapped="Path_Tapped" Tag="Djibouti" Opacity="0">
+                <Path Data="M819,287 L812,289 L803,288 L798,288 L796,296 L801,301 L806,305 L812,307 L815,311 L820,309 L826,311 L831,309 L835,304 L828,304 L824,298 L821,293 z" Fill="#FFF4F4F5" Height="25" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="40"/>
+
+
+            </Canvas>
+            <Canvas x:Name="Somalia" Height="131" Canvas.Left="803" Canvas.Top="292" Width="111" Tapped="Path_Tapped" Tag="Somalia" Opacity="0">
+                <Path Data="M843,307 L838,312 L834,316 L842,322 L854,323 L865,326 L873,324 L883,325 L884,330 L879,337 L873,342 L863,347 L858,354 L851,359 L843,364 L835,362 L827,367 L821,370 L814,374 L810,382 L803,386 L803,397 L803,409 L805,422 L817,413 L827,402 L837,396 L849,387 L862,381 L871,374 L883,360 L892,348 L896,339 L897,330 L903,323 L908,318 L912,309 L913,300 L913,294 L909,292 L903,297 L897,298 L889,299 L879,299 L868,304 L862,305 L853,306 z" Fill="#FFF4F4F5" Height="131" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="111"/>
+
+
+            </Canvas>
+            <Canvas x:Name="Ethiopia" Height="98" Canvas.Left="713" Canvas.Top="276" Width="155" Tapped="Path_Tapped" Tag="Ethiopia" Opacity="0">
+                <Path Data="M757,279 L748,281 L738,287 L737,296 L730,301 L728,308 L724,313 L719,315 C719,315 719,313 719,321 C719,329 719,329 719,329 L713,337 L719,338 L723,347 L729,355 L736,359 L743,364 L753,363 L762,369 L769,373 L778,372 L784,368 L793,362 L801,369 L811,367 L819,361 L824,358 L831,356 L840,356 L847,353 L856,343 L861,341 L867,336 L861,332 L851,333 L841,328 L832,327 L824,324 L816,317 L805,314 L797,310 L792,301 L790,292 L792,285 L787,281 L783,277 L772,276 L761,276 z" Fill="#FFF4F4F5" Height="98" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="155"/>
+
+
+            </Canvas>
+            <Canvas x:Name="Uganda" Height="47" Canvas.Left="659" Canvas.Top="375" Width="64" Tapped="Path_Tapped" Tag="Uganda" Opacity="0">
+                <Path Data="M690,380 L681,379 L676,377 L674,387 L675,393 L670,404 C670,404 665,403 663,408 C661,413 661,413 661,413 L659,418 L667,421 L685,420 L696,420 L705,419 L710,419 L710,412 L714,402 L721,395 L722,388 L719,384 L716,380 L713,376 L709,375 L703,376 z" Fill="#FFF4F4F5" Height="47" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="64"/>
+
+
+            </Canvas>
+            <Canvas x:Name="Kenya" Height="82" Canvas.Left="715" Canvas.Top="370" Width="89" Tapped="Path_Tapped" Tag="Kenya" Opacity="0">
+                <Path Data="M728,370 L734,371 L739,374 L746,373 L753,374 L757,377 L761,379 L772,380 L780,382 L787,378 L795,374 L797,378 L794,389 L797,396 L800,409 L801,419 L803,424 L792,435 L784,447 L778,451 L769,448 L763,443 L758,433 L748,430 L731,425 L722,420 L715,416 L719,409 L726,403 L728,394 L727,384 L724,376 z" Fill="#FFF4F4F5" Height="82" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="89"/>
+
+
+            </Canvas>
+            <Canvas x:Name="Rwanda" Height="31" Canvas.Left="650" Canvas.Top="424" Width="26" Tapped="Path_Tapped" Tag="Rwanda" Opacity="0">
+                <Path Data="M656,425 L652,428 L651,436 L650,442 L652,447 L652,453 L658,454 L665,452 L670,454 L670,447 L674,440 L675,436 L675,426 L669,424 z" Fill="#FFF4F4F5" Height="31" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="26"/>
+
+
+            </Canvas>
+            <Canvas x:Name="Burundi" Height="30" Canvas.Left="653" Canvas.Top="457" Width="27" Tapped="Path_Tapped" Tag="Burundi" Opacity="0">
+                <Path Data="M667,458 L660,457 L653,459 L655,466 L656,474 L661,479 L667,482 L672,486 L677,484 L679,476 L675,470 L674,464 L674,457 z" Fill="#FFF4F4F5" Height="30" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="27"/>
+
+
+            </Canvas>
+            <Canvas x:Name="Tanzania" Height="95" Canvas.Left="678" Canvas.Top="424" Width="105" Tapped="Path_Tapped" Tag="Tanzania" Opacity="0">
+                <Path Data="M682,424 L682,430 L685,438 L681,443 L681,449 L684,454 L683,461 L685,466 L687,474 L686,481 L684,488 L678,491 L681,495 L690,497 L699,499 L709,499 L719,501 L724,509 L727,514 L736,518 L747,518 L756,518 L765,515 L776,515 L782,510 L775,500 L774,494 L772,487 L764,481 L768,465 L767,456 L757,453 L750,445 L734,437 L721,432 L707,430 L694,425 z" Fill="#FFF4F4F5" Height="95" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="105"/>
+
+
+            </Canvas>
+            <Canvas x:Name="Seychelles" Height="34" Canvas.Left="846" Canvas.Top="452" Width="36" Tapped="Path_Tapped" Tag="Seychelles" Opacity="0">
+                <Path Data="M866,452 L862,454 L857,460 L852,465 C852,465 854,442 853,471 C852.756,478.068 852.75,482.047 852.88,484.023 C853.119,487.645 853.815,484.537 854.345,481.387 C854.713,479.204 855,477 855,477 L846,478 L848,482 L863,479 L868,478 L871,473 L876,473 L878,470 L876,464 L881,459 L875,454 z" Fill="#FFF4F4F5" Height="34.652" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="36"/>
+
+
+            </Canvas>
+            <Canvas x:Name="Zambia" Height="82" Canvas.Left="564" Canvas.Top="500" Width="136" Tapped="Path_Tapped" Tag="Zambia" Opacity="0">
+                <Path Data="M650,503 L647,511 L646,519 L653,524 L661,526 L663,535 L659.45,543.521 L658,547 L650,548 L640,540 L628,540 L622,534 L607,534 L598,530 L591,527 L590,535 L589,543 L582,543 L574,543 L567,542 L565,550 L564,561 L567,572 L578,570 L585,576 L596,576 L604,578 L610,578 L616,581 L621,575 L625,570 L631,566 L637,568 L641,565 L645,561 L651,557 L658,557 L670,548 L678,545 L686,545 L691,541 L691,535 L696,529 L699,522 L698,514 L691,506 L680,504 L672,500 L660,500 z" Fill="#FFF4F4F5" Height="82" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="136"/>
+
+
+            </Canvas>
+            <Canvas x:Name="Malawi" Height="69" Canvas.Left="696" Canvas.Top="507" Width="36" Tapped="Path_Tapped" Tag="Malawi" Opacity="0">
+                <Path Data="M704,507 L708,513 L706,517 L703,521 L703,527 L702,531 L700,536 L696,541 L697,546 L701,549 L707,552 L711,552 L716,556 L714,562 L712,566 L718,572 L720.72,574.04 L722,575 L725,570 L729,567 L731,562 L731,556 L728,549 L724,547 L719,548 L719,540 L716,536 L714,529 L717,525 L719,519 L718,514 L716,508 L712,507 z" Fill="#FFF4F4F5" Height="69" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="36"/>
+
+
+            </Canvas>
+            <Canvas x:Name="Mozambique" Height="140" Canvas.Left="674" Canvas.Top="520" Width="114" Tapped="Path_Tapped" Tag="Mozambique" Opacity="0">
+                <Path Data="M727,529 L728,535 L732,541 L735,549 L739,556 L739,561 L737,567 L736,573 L733,578 L728,583 L719,583 L715,580 L711,575 L707,568 L706,560 L701,558 L696,556 L688,557 L682,557 L674,560 L682,562 L694,566 L699,570 L700,579 L701,590 L699,597 L699,602 L700,609 L696,612 L686,621 L679,625 L678,634 L678,639 L684,647 L683,659 L696,651 L706,646 L712,643 L714,636 L713,627 L712,617 L710,611 L710,605 L709,600 L713,596 L720,595 L725,594 L733,588 L741,581 L748,580 L759,574 L767,571 L773,567 L785,559 L786,551 L786,541 L787,528 L787,520 L780,526 L774,527 L763,528 L755,531 L744,531 L735,530 z" Fill="#FFF4F4F5" Height="140" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="114"/>
+
+
+            </Canvas>
+            <Canvas x:Name="Madagascar" Height="116" Canvas.Left="820" Canvas.Top="539" Width="86" Tapped="Path_Tapped" Tag="Madagascar" Opacity="0">
+                <Path Data="M896,539 L891,546 L885,553 L879,565 L871,568 L865,570 L858,571 L850,573 L842,576 L838,582 L836,587 L837,596 L837,603 L837,610 L834,615 L826,621 L820,625 L820,632 L821,639 L822,648 L825,652 L831,654 L837,654 C837,654 838,654 843,654 C848,654 848,654 848,654 L854,645 L859,639 L862,629 L868,622 L873,610 L878,605 L881,596 C881,596 882,595 886,590 C890,585 890,585 890,585 L891,579 L894,569 L895,560 L899,554 L905,557 L903,543 z" Fill="#FFF4F4F5" Height="116" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="86"/>
+
+
+            </Canvas>
+            <Canvas x:Name="Angola" Height="104" Canvas.Left="439" Canvas.Top="475" Width="138" Tapped="Path_Tapped" Tag="Angola" Opacity="0">
+                <Path Data="M448,475 L452,481 L455,491 L456,496 L454,505 L459,513 L463,523 L462,534 L453,540 L448,549 L443,560 L439,566 L448,568 L459,572 L470,574 L485,574 L499,571 L509,574 L518,575 L530,577 L541,578 L552,576 L562,577 L552,566 L552,555 L552,545 L552,536 L555,531 L564,531 L576,527 L560,526 L554,519 L554,514 L552,506 L552,497 L550,493 L541,492 L535,492 L529,498 L518,499 L507,496 L499,492 L491,486 L486,476 L470,478 z" Fill="#FFF4F4F5" Height="104" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="138"/>
+
+
+            </Canvas>
+            <Canvas x:Name="Namibia" Height="104" Canvas.Left="444" Canvas.Top="582" Width="99" Tapped="Path_Tapped" Tag="Namibia" Opacity="0">
+                <Path Data="M444,584 L444,591 L454,602 L462,611 L470,620 C470,620 478,623 475,630 C472,637 472,637 472,637 L478,653 L483,667 L489,677 C489,677 494,678 494,678 C498,674 498,674 498,674 L508,680 L520,683 C520,683 525,690 527,682 C529,674 529,674 529,674 L530,657 L530,642 L530,626 L531,618 L538,616 L542,605 L542,594 L537,589 L516,589 L501,583 L481,585 L464,582 L450,582 z" Fill="#FFF4F4F5" Height="104.835" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="99"/>
+
+
+            </Canvas>
+            <Canvas x:Name="Botswana" Height="79" Canvas.Left="538" Canvas.Top="587" Width="99" Tapped="Path_Tapped" Tag="Botswana" Opacity="0">
+                <Path Data="M554,592 L554,600 L552,604 L552,615 L552,623 L549,631 L542,629 L538,636 L541,646 L545,650 C545,650 545,655 547,660 C549,665 549,665 549,665 L556,659 L562,655 L568,646 L577,648 L586,650 L592,652 L600,648 L604,642 L610,639 L616,637 L625,628 L636,624 L625,620 L620,612 L612,607 L604,602 L601,594 L596,587 L590,591 L584,592 L575,595 L566,591 z" Fill="#FFF4F4F5" Height="79" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="99"/>
+
+
+            </Canvas>
+            <Canvas x:Name="Zimbabwe" Height="60" Canvas.Left="607" Canvas.Top="565" Width="87" Tapped="Path_Tapped" Tag="Zimbabwe" Opacity="0">
+                <Path Data="M653,570 L648,574 L645,579 L639,580 L633,579 L629,585 L624,588 L620,590 L614,590 L607,589 L614,597 L619,601 L625,606 L630,609 L632,614 L639,616 L647,619 L654,619 L662,624 L670,623 C670,623 671,618 676,616 C681,614 677,621 681,614 C685,607 685,607 685,607 L691,604 L688,598 L689,592 L693,584 L693,578 L690,574 L683,572 L676,571 L666,569 L662,566 L654,565 z" Fill="#FFF4F4F5" Height="60" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="87"/>
+
+
+            </Canvas>
+            <Canvas x:Name="South_Africa" Height="108" Canvas.Left="502" Canvas.Top="627" Width="172" Tapped="Path_Tapped" Tag="South_Africa" Opacity="0">
+                <Path Data="M502,690 L508,701 L514,706 L519,715 L518,721 L517,727 L524,733 L533,734 L546,731 L555,728 L563,729 L577,727 L584,730 L595,729 L603,726 L613,724 L619,719 L624,718 L617,713 L610,710 L606,702 L604,691 L602,682 L608,679 L615,671 L620,667 L626,667 L633,665 L640,662 L642,655 L638,650 L643,646 L650,639 L658,638 L665,638 L673,637 L670,629 L663,628 L655,629 L650,627 L642,632 L637,633 L631,640 L623,642 L621,648 L617,652 L611,655 L607,659 L601,661 L592,665 L586,664 L581,661 L576,659 L571,658 L565,666 L561,668 L551,671 L541,674 L536,669 L540,683 L535,689 L530,689 L523,692 L514,693 z" Fill="#FFF4F4F5" Height="108" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="172"/>
+
+
+            </Canvas>
+            <Canvas x:Name="Lesotho" Height="34" Canvas.Left="613" Canvas.Top="674" Width="35" Tapped="Path_Tapped" Tag="Lesotho" Opacity="0">
+                <Path Data="M631,675 L622,678 L617,681 L615,686 L613,692 L613,697 L618,702 L623,707 L627,707 L631,702 L637,699 L643,693 L647,687 L647,677 L641,674 z" Fill="#FFF4F4F5" Height="34" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="35"/>
+
+
+            </Canvas>
+            <Canvas x:Name="Swaziland" Height="35" Canvas.Left="651" Canvas.Top="646" Width="29" Tapped="Path_Tapped" Tag="Swaziland" Opacity="0">
+                <Path Data="M654,664 L654,671 L656,677 L661,679 L665,680 L670,678 L674,674 L676,668 L679,661 L676,656 L675,649 L669,648 L663,646 L657,646 L651,649 z" Fill="#FFF4F4F5" Height="35" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="29"/>
+
+
+            </Canvas>
+
+
+        </Canvas>
+        <!--TextBlock x:Name="QuestionBlock" Foreground="Blue" FontFamily="Comic Sans MS" TextAlignment="Center" FontSize="40" FontWeight="Bold" HorizontalAlignment="Left" Margin="668,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="111" Height="59"/-->
+
+
+        <TextBlock x:Name="ScoreBlock" HorizontalAlignment="Left" Margin="100,615,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="114" Height="92" Text="0" Foreground="Red" FontFamily="Comic Sans MS" TextAlignment="Center" FontSize="50" FontWeight="Bold" />
+
+        <TextBlock x:Name="QuestionBlock2" HorizontalAlignment="Left" Margin="520,646,0,0" TextWrapping="Wrap" Foreground="Blue" FontFamily="Comic Sans MS" TextAlignment="Center" FontSize="44" FontWeight="Bold" VerticalAlignment="Top" Height="79" Width="326" Grid.Column="1"/>
+        <TextBlock x:Name="QuestionBlock_Copy" Text="Select" Foreground="Blue" FontFamily="Comic Sans MS" TextAlignment="Center" FontSize="44" FontWeight="Bold" HorizontalAlignment="Left" Margin="136,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" Height="59"/>
+        <TextBlock x:Name="TimerBlock_Copy" HorizontalAlignment="Left" Margin="559,6,0,0" TextWrapping="Wrap" Text="Time Left" VerticalAlignment="Top" Width="257" Foreground="Yellow" FontFamily="Comic Sans MS" TextAlignment="Center" FontSize="46" FontWeight="Bold" RenderTransformOrigin="1.331,0.434" Height="61" Grid.Column="1"/>
+        <TextBlock x:Name="TimerBlock_Copy1" HorizontalAlignment="Left" Margin="645,72,0,0" TextWrapping="Wrap" Text=":00" VerticalAlignment="Top" Width="171" Foreground="Red" FontFamily="Comic Sans MS" TextAlignment="Center" FontSize="46" FontWeight="Bold" RenderTransformOrigin="1.331,0.434" Height="72" Grid.Column="1"/>
+        <TextBlock x:Name="QuestionBlock" Text="District" Foreground="Red" FontFamily="Comic Sans MS" TextAlignment="Center" FontSize="42" FontWeight="Bold" HorizontalAlignment="Left" Margin="351,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="445" RenderTransformOrigin="3.405,-8.237" Grid.ColumnSpan="2"/>
+
+
+
+
+        <TextBlock x:Name="score" Text="Score" Foreground="Blue" FontFamily="Comic Sans MS" TextAlignment="Center" FontSize="44" FontWeight="Bold" HorizontalAlignment="Left" Margin="10,533,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" RenderTransformOrigin="3.405,-8.237" Height="82"/>
+        <TextBlock x:Name="TimerBlock" Text="0" Foreground="Red" FontFamily="Comic Sans MS" TextAlignment="Center" FontSize="44" FontWeight="Bold" HorizontalAlignment="Left" Margin="559,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="164" RenderTransformOrigin="3.405,-8.237" Grid.Column="1" Height="70"/>
+
+    </Grid>
+</Page>
